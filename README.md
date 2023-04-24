@@ -19,3 +19,9 @@ Feature Flag: `Teste Feature Flags`
 Flag: `feature_xpto`  
 Flag Attribute: `regex_cpfs_rollout`  
 
+## Test
+
+With the application running, call the endpoint with the cURL:
+```
+
+```

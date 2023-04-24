@@ -2,17 +2,23 @@ module github.com/MariaEduardaSpiess/aws_app_config_test
 
 go 1.19
 
-require github.com/gorilla/mux v1.8.0
+require (
+	github.com/Netflix/go-env v0.0.0-20220526054621-78278af1949d
+	github.com/aws/aws-sdk-go v1.44.242
+	github.com/gin-gonic/gin v1.9.0
+	github.com/joho/godotenv v1.5.1
+	github.com/subosito/gotenv v1.4.2
+)
 
 require (
 	github.com/bytedance/sonic v1.8.7 // indirect
-	github.com/caarlos0/env/v8 v8.0.0 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.12.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
 	github.com/leodido/go-urn v1.2.3 // indirect
@@ -29,11 +35,4 @@ require (
 	golang.org/x/text v0.9.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-)
-
-require (
-	github.com/aws/aws-sdk-go v1.44.242 // indirect
-	github.com/gin-gonic/gin v1.9.0
-	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/sirupsen/logrus v1.9.0
 )

@@ -1,6 +1,11 @@
 package config
 
-import "github.com/caarlos0/env/v8"
+import (
+	"fmt"
+
+	"github.com/Netflix/go-env"
+	"github.com/subosito/gotenv"
+)
 
 type Environment struct {
 	AwsIdentifier string `env:"AWS_ID"`
@@ -10,7 +15,10 @@ type Environment struct {
 var Env Environment
 
 func init() {
-	if err := env.Parse(&Env); err != nil {
-		panic(err)
+	gotenv.Load()
+
+	_, err := env.UnmarshalFromEnviron(&Env)
+	if err != nil {
+		fmt.Print(err.Error())
 	}
 }
