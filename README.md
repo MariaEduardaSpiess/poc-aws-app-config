@@ -23,5 +23,5 @@ Flag Attribute: `regex_cpfs_rollout`
 
 With the application running, call the endpoint with the cURL:
 ```
-
+curl --location --request GET 'localhost:8080/10947980021'
 ```
